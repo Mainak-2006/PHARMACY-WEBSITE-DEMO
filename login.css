@@ -1,0 +1,187 @@
+body {
+    background-color: #0d4e357c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 185px;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    perspective: 1000px;
+}
+
+.login-box {
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0c885c;
+    border-radius: 25px 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    background-color: #015d2e;
+    transform: rotateY(180deg);
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 80%;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    color: #000000;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #000000;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -20px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.btn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px 25px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.btn:hover {
+    background-color: #a61f1f;
+}
+
+.container.active .card {
+    transform: rotateY(180deg);
+}
+
+.back:hover {
+    background-color: #004829;
+    transition: 1s;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 25px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #3a0000;
+    transition: 1s;
+  }
+@media screen and (max-width: 768px) {
+    body {
+        margin: 100px;
+        padding: 5px 25px;
+    }
+
+    .login-box {
+        width: 250px;
+        height: 350px;
+    }
+
+    .input-box {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .input-box label {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 50px;
+        padding: 5px 15px;
+    }
+
+    .login-box {
+        width: 200px;
+        height: 300px;
+    }
+
+    .input-box {
+        width: 95%;
+        margin: 15px 0;
+    }
+
+    .input-box input {
+        font-size: 12px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        margin: 8px 15px;
+        font-size: 12px;
+    }
+}

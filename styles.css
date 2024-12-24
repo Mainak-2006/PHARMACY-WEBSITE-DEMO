@@ -1,0 +1,249 @@
+body {
+    background-color: #0e6d2f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    background-color: #031d137c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.room {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.room1 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h2 {
+    color: #fff;
+    font-size: 35px;
+    margin: 10px;
+    padding: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.contact1 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.contact2 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.contact3 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 45px 30px;
+    text-align: center;
+    margin: 20px 150px 50px 150px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.about1 {
+
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.about2 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.about3 {
+    background-color: #183c2e7c;
+    color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-align: center;
+    margin: 2px;
+    list-style-type: none;
+    text-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #0e6d2f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 35px;
+    margin: 10px;
+    padding: auto;
+}
+
+p {
+    color: #000000;
+    font-size: 15px;
+    margin: 10px;
+    padding: auto;
+}
+
+h2:hover {
+
+    color: #000000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    ul,
+    .room,
+    .room1,
+    .contact1,
+    .contact2,
+    .contact3,
+    .about1,
+    .about2,
+    .about3 {
+        font-size: 18px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact3,
+    .about3 {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    ul,
+    .room,
+    .room1,
+    .contact1,
+    .contact2,
+    .contact3,
+    .about1,
+    .about2,
+    .about3 {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .contact3,
+    .about3 {
+        margin: 5px;
+    }
+}
+
+
